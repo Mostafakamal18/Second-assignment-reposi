@@ -6,7 +6,7 @@ h1{
     font-size: 30px;
 }
 h2{
-    margin-left: 50px;
+   
     margin-bottom: 50px;
 }
 .container{
@@ -28,7 +28,7 @@ h2{
 
 .half-width{
     width: 50%;
-    margin-left: 50px;
+   
 }
 .half-width img{
     width: 80%;
@@ -89,4 +89,8 @@ h2{
     margin-top: 70px;
     
     
+}
+.icon{
+    margin-left:10px;
+    font-size: 25px;
 }
