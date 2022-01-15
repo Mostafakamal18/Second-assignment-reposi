@@ -11,7 +11,7 @@ header{
 .top-header{
 display: flex;
 margin-top: 100px;
-margin-left: 70px;
+ margin-left: 70px; 
 }
  .menu-bar{
      
@@ -48,7 +48,7 @@ h1{
 
 .container{
     margin-left: 80px;
-    margin-right: 80px;
+    margin-right: 80px; 
    
 }
 .main-camera{
@@ -64,12 +64,22 @@ h1{
     
 }
 
+.main-camera-info{
+    width: 582px;
+    height: 270px;
+}
+.main-camera-img{
+    width: 440px;
+    height: 414px;
+    margin-left: 390px;
+}
 
 
-.half-width{
+
+/* .half-width{
     width: 50%;
    
-}
+} */
 .half-width img{
     width: 80%;
 }
@@ -159,18 +169,80 @@ h1{
     }
     .main-camera{
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
+    .flexible-container{
+        flex-direction: column;
+    }
+    .main-camera-img{
+        margin-left: 0px;
+
+    }
+    .top-header, nav > ul{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu-bar{
+        margin: 0;
+    }
+    h1{
+        margin-bottom: 0;
+    }
+    .main-camera .main-camera-info p{
+        padding-bottom:30px ;
+        padding-right: 30px;
+        margin-right: 50px;
+    }
+     .half-width p{
+      
+        padding-right: 60px;
+    }
+    .container{
+        margin-left: 0px;
+        margin-right: 0px;
+    
     
 }
 /* ipad device */
 
     
-    @media only screen and (min-width: 688px) and (max-width: 959px){
-        .container{
-            width: 100%;
-        }   
-        .popular-collections{
-            grid-template-columns: repeat(2, 1fr);
-        }
-}
-
+@media only screen and (min-width: 668px) and (max-width: 959px){
+    
+  .main-camera{
+      
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+    }
+    /* .menu ul li{
+      display: block;
+    } */
+    .main-camera-info {
+      margin-top: 0px;
+      width: 100%;
+      text-align: center;
+  }
+    .main-camera-info h2 {
+      font-size: 30px;
+      line-height: 50px;
+  }
+  .main-camera-info p{
+    padding: 20px;
+  }
+  .main-camera-img{
+      margin: 0px;
+  }
+  .popular-collections{
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+    
+    .contact{
+      width: 90%;
+    }
+    .footer-area {
+      max-width: 959px;
+    }
+    }
