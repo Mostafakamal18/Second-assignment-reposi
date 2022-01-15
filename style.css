@@ -141,7 +141,7 @@ h1{
     text-align: center;
     padding: 10px;
     margin-top: 70px;
-    width: 50%;
+    width: 100%;
     
     
     
@@ -172,11 +172,15 @@ h1{
         justify-content: center;
         align-items: center;
     }
+    .main-camera-info{
+        width: 100%;
+    }
     .flexible-container{
         flex-direction: column;
     }
     .main-camera-img{
         margin-left: 0px;
+        width: 250px;
 
     }
     .top-header, nav > ul{
@@ -210,15 +214,15 @@ h1{
     
 @media only screen and (min-width: 668px) and (max-width: 959px){
     
-  .main-camera{
-      
+    .main-camera{
       justify-content: center;
       flex-direction: column;
       align-items: center;
     }
-    /* .menu ul li{
-      display: block;
-    } */
+    
+    .flexible-container{
+        flex-direction: column;
+    }
     .main-camera-info {
       margin-top: 0px;
       width: 100%;
@@ -232,17 +236,19 @@ h1{
     padding: 20px;
   }
   .main-camera-img{
-      margin: 0px;
+    margin-left: 0px;
   }
   .popular-collections{
-      grid-template-columns: repeat(2, 1fr);
-      justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    }
+    .top-header, nav > ul{
+        flex-direction: column;
+         align-items: center;
+        align-content: center;
+    }
+    .menu-bar{
+        margin: 0px;
     }
     
-    .contact{
-      width: 90%;
-    }
-    .footer-area {
-      max-width: 959px;
-    }
+   
     }
