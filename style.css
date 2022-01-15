@@ -52,7 +52,7 @@ h1{
    
 }
 .main-camera{
-    display: flex;
+   display: flex;
    
 }
 .button{
@@ -61,7 +61,10 @@ h1{
     color: rgb(252, 249, 249);
     padding: 10px;
     border-radius: 50px;
+    
 }
+
+
 
 .half-width{
     width: 50%;
@@ -81,8 +84,8 @@ h1{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap:20px;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
  
 }
 .popolar-collection{
@@ -92,6 +95,7 @@ h1{
    border-radius: 20px;
    padding: 10px;
    width: 90%;
+   height: 93%;
    
 }
 .collection-photo img {
@@ -99,8 +103,7 @@ h1{
 }
 .site-btn{
     text-align: right;
-    /* background-color: rgb(249, 250, 253);
-*/
+   
 
 }
 #btn{
@@ -135,3 +138,30 @@ h1{
     margin-left:10px;
     font-size: 25px;
 }
+/* media query */
+/* ------------------ */
+/* mobile device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .popular-collections, .main-camera, .lexible-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .popolar-collection{
+        flex-direction: row;
+    }
+    
+}
+/* ipad device */
+
+    
+    @media only screen and (min-width: 768px) and (max-width: 959px){
+        .container{
+            width: 100%;
+        }   
+        .popular-collections{
+            grid-template-columns: repeat(2, 1fr);
+        }
+}
+
