@@ -80,7 +80,7 @@ h1{
 .popular-collections{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-row-gap:10px;
+    grid-row-gap:20px;
     justify-content: center;
     align-items: center;
  
