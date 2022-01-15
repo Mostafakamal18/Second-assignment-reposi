@@ -131,6 +131,8 @@ h1{
     text-align: center;
     padding: 10px;
     margin-top: 70px;
+    width: 50%;
+    
     
     
 }
@@ -145,18 +147,25 @@ h1{
     .container{
         width: 100%;
     }
-    .popular-collections, .main-camera, .lexible-container{
+    .footer-item{
+        width: 100%;
+    }
+
+    .popular-collections, .lexible-container{
         grid-template-columns: repeat(1, 1fr);
     }
     .popolar-collection{
         flex-direction: row;
+    }
+    .main-camera{
+        flex-direction: column;
     }
     
 }
 /* ipad device */
 
     
-    @media only screen and (min-width: 768px) and (max-width: 959px){
+    @media only screen and (min-width: 688px) and (max-width: 959px){
         .container{
             width: 100%;
         }   
